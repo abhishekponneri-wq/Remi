@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#3A6A4F" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Remi — Memory & Intent Companion</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              remi: {
+                50: '#F4F8F5',
+                100: '#E6EFE9',
+                200: '#C8DDD0',
+                300: '#9EBFAC',
+                400: '#6FA084',
+                500: '#4D8565',
+                600: '#3A6A4F',
+                700: '#2F543F',
+                800: '#284435',
+                900: '#21382C',
+              },
+              warmth: {
+                50: '#FDFBF7',
+                100: '#FAF4EC',
+                200: '#F3E5D4',
+                500: '#D97736',
+                600: '#B8581E',
+              }
+            },
+            fontFamily: {
+              sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Mobile touch optimization */
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .safe-bottom-padding {
+        padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+      }
+    </style>
+      </head>
+  <body class="bg-[#FAF7F2] text-slate-800 antialiased selection:bg-remi-200 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.js"></script></body>
+</html>
