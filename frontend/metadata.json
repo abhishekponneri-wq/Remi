@@ -1,0 +1,7 @@
+{
+  "name": "Remi — Warm Voice Memory Companion",
+  "description": "Remi listens to what older adults say they'll do, extracts self-stated intents and triggers using Gemini, and gently prompts them and their caregivers when it's time.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
